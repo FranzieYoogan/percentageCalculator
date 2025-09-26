@@ -36,11 +36,27 @@ function Percentage() {
 
                                 <div className='containerInputs'>
                                     <input type="text" className={`${click ? 'animation' : ''}`} 
-                                    value={percentage} name="percentage" id="percentage" onChange={(e) => setPercentage(e.target.value)} />
+                                    value={percentage} name="percentage" id="percentage" 
+                                    onChange={(e) => {
+                                    const value = e.target.value;
+                                    
+                                    if (/^\d*\.?\d*$/.test(value)) {
+                                    setPercentage(value);  
+                                    }
+                                }} />
+                                
                                     <span>% of</span>
                                     
                                     <input type="text" className={`${click ? 'animation' : ''}`}
-                                     value={value} name="value" id="value" onChange={(e) => setValue(e.target.value)} />
+                                     value={value} name="value" id="value" 
+                                         onChange={(e) => {
+                                    const value = e.target.value;
+                                    
+                                    if (/^\d*\.?\d*$/.test(value)) {
+                                    setPercentage(value);  
+                                    }
+                                        }} />
+
                                     <span>is</span>
                                     
                                     <input className={`${click ? 'animation' : ''} resultStyle`}
