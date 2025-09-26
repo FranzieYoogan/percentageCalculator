@@ -1,0 +1,132 @@
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.containerItems {
+
+        background-color: rgb(36,39,56);
+        border-radius: 10px;
+        padding: 15px;
+        width: 30%;
+    
+}
+
+.containerInputs {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.titleStyle {
+
+    font-weight: 900;
+    color: white;
+    text-align: center;
+
+}
+
+input {
+
+    margin: 10px;
+    padding: 10px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(61, 67, 89);
+
+}
+
+.resultStyle {
+
+    color: #fcb205;
+
+}
+
+.animation {
+
+    animation-name: bigger;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bigger {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.1);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+span {
+
+    color: white;
+    
+}
+
+.containerButton {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttonStyle {
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 900;
+    color: black;
+    background-color: #fcb205;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.result {
+
+    color: #fcb205;
+}
+
+.buttonStyle:hover {
+
+    transform: scale(1.1);
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .containerItems {
+
+        width: 100%;
+
+    }
+
+}
